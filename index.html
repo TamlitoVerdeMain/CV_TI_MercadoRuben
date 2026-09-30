@@ -3,34 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de Ruben Salvador Mercado Lucio, desarrollador web junior y estudiante de Ingeniería en Sistemas.">
+  <meta name="theme-color" content="#08080a">
   <title>CV - Ruben Salvador Mercado Lucio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header class="header">
-    <div class="container">
-        <div class="Hea">
-          <div class="Sticky_thing">
-            <h1 class="name">Ruben Salvador Mercado Lucio</h1>
-            <p class="role">Desarrollador web junior</p>
-            <nav class="nav">
-              <a href="#sobre-mi">Sobre mí</a>
-              <a href="#habilidades">Habilidades</a>
-              <a href="#formacion">Formación</a>
-              <a href="#proyectos">Proyectos</a>
-              <a href="#contacto">Contacto</a>
-            </nav>
-          </div>
-          <img src="assets/foto de perfil.jpeg" alt="Foto de perfil" class="foto">
+    <div class="container hero">
+      <div class="hero-text">
+        <p class="eyebrow">Portafolio</p>
+        <h1 class="name">Ruben Salvador Mercado Lucio</h1>
+        <p class="role">Desarrollador web junior</p>
+        <div class="hero-actions">
+          <a href="#proyectos" class="btn-primary">Ver proyectos</a>
+          <a href="#contacto" class="btn-ghost">Contactar</a>
         </div>
+      </div>
+      <div class="foto-wrap">
+        <img src="assets/foto de perfil.jpeg" alt="Foto de perfil de Ruben Salvador Mercado Lucio" class="foto">
+      </div>
+    </div>
   </header>
+
+  <div class="navbar" id="navbar">
+    <nav class="nav container">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#formacion">Formación</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
 
   <main class="main">
     <section id="sobre-mi" class="section">
       <div class="container">
         <h2>Sobre mí</h2>
         <p>
-         Estudiante de ingenieria en sistemas en el tecnologico superior de Jalisco, mis habilidades principales son en la creacion de paginas web con enfoque en la creatividad y optimizacion, siempre tratando de aprender y utilizando tecnologias de vanguardia.
+        Estudiante de Ingeniería en Sistemas en el Tecnológico Superior de Jalisco, enfocado en el análisis de datos. Manejo SQL y Python para consultar, limpiar y analizar información, y actualmente fortalezco mis habilidades en pandas y Power BI para convertir datos en decisiones. Mi formación en desarrollo me da una base sólida en programación, bases de datos y control de versiones con Git.
         </p>
       </div>
     </section>
@@ -38,30 +54,19 @@
     <section id="habilidades" class="section">
       <div class="container">
         <h2>Habilidades</h2>
+
         <h3>Habilidades técnicas</h3>
-        <!-- <ul class="skills-list">
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>JavaScript</li>
-          <li>Git / GitHub</li>
-          <li>Docker (básico)</li>
-          <li>Python</li>
-          <li>C++</li>
-          <li>Figma</li>
-          <li>SQL</li>
-        </ul> -->
-        <nav class="HabilidadesT">
-            <a href="" title="HTML5"><img src="assets/icons8-html-100.png" alt="HTML5"></a>
-            <a href="" title="CSS3"><img src="assets/icons8-css-100.png" alt="CSS3"></a>
-            <a href="" title="Docker"><img src="assets/icons8-estibador-100.png" alt="Docker"></a>
-            <a href="" title="JavaScript"><img src="assets/icons8-javascript-100.png" alt="JavaScript"></a>
-            <a href="" title="Git"><img src="assets/icons8-git-100.png" alt="Git"></a>
-            <a href="" title="Python"><img src="assets/icons8-python-100.png" alt="Python"></a>
-            <a href="" title="Figma"><img src="assets/icons8-figura-100.png" alt="Figma"></a>
-            <a href="" title="SQL"><img src="assets/icons8-sql-100.png" alt="SQL"></a>
-            <a href="" title="C++"><img src="assets/icons8-c++-100.png" alt="C++"></a>
-            
-        </nav>
+        <div class="HabilidadesT">
+          <span class="tech" title="SQL"><img src="assets/icons8-sql-100.png" alt="SQL"></span>
+          <span class="tech" title="Python"><img src="assets/icons8-python-100.png" alt="Python"></span>
+          <span class="tech tech--claro" title="Pandas"><img src="assets/icons8-pandas-96.png" alt="Pandas"></span>
+          <span class="tech tech--claro" title="Jupyter"><img src="assets/icons8-jupyter-100.png" alt="Jupyter Notebook"></span>
+          <span class="tech" title="Git"><img src="assets/icons8-git-100.png" alt="Git"></span>
+          <span class="tech" title="Docker"><img src="assets/icons8-estibador-100.png" alt="Docker"></span>
+          <span class="tech" title="JavaScript"><img src="assets/icons8-javascript-100.png" alt="JavaScript"></span>
+          <span class="tech" title="HTML5"><img src="assets/icons8-html-100.png" alt="HTML5"></span>
+          <span class="tech" title="CSS3"><img src="assets/icons8-css-100.png" alt="CSS3"></span>
+        </div>
 
         <h3>Habilidades blandas</h3>
         <ul class="skills-list">
@@ -86,76 +91,76 @@
     <section id="proyectos" class="section">
       <div class="container">
         <h2>Proyectos</h2>
-        <div class="ProyectosChilos">
-        <a href="https://github.com/TamalitoVerde/ecotrack" target="_blank" rel="noopener noreferrer" class="card-link">
-        <article class="card">
-          <img class="thumb" src="assets/Ecotrack.jpg" alt="EcoTrack">
-      <div class="card-body">
-        <h3>EcoTrack</h3>
-        <p>Aplicacion movil para la localizacion y administracion de puntos de reciclaje</p>
-      </div>
-        </article>
-        </a>
-        <a href="https://github.com/TamalitoVerde/SAV-Proyecto" target="_blank" rel="noopener noreferrer" class="card-link">
-        <article class="card">
-          <img class="thumb" src="assets/veterinaria.jpg" alt="SAV">
-      <div class="card-body">
-        <h3>SAV</h3>
-        <p>Sistema que administra el transito de animales y sus distintos productos en una veterinaria</p>
-      </div>
-        </article>
-        </a>
 
-         </article>
-        <a href="https://github.com/Daniel220503/Foodies-TSJ" target="_blank" rel="noopener noreferrer" class="card-link">
-        <article class="card">
-          <img class="thumb" src="assets/TSJ foodies.png" alt="SAV">
-      <div class="card-body">
-        <h3>TSJ FOODIES</h3>
-        <p>Plataforma de comida en planteles universitarios</p>
-      </div>
-        </article>
-        </a>
-</div>
+        <div class="ProyectosChilos">
+          <a href="https://github.com/TamalitoVerde/ecotrack" target="_blank" rel="noopener noreferrer" class="card-link">
+            <article class="card">
+              <img class="thumb" src="assets/Ecotrack.jpg" alt="EcoTrack">
+              <div class="card-body">
+                <h3>EcoTrack</h3>
+                <p>Aplicacion movil para la localizacion y administracion de puntos de reciclaje</p>
+              </div>
+            </article>
+          </a>
+
+          <a href="https://github.com/TamalitoVerde/SAV-Proyecto" target="_blank" rel="noopener noreferrer" class="card-link">
+            <article class="card">
+              <img class="thumb" src="assets/veterinaria.jpg" alt="SAV">
+              <div class="card-body">
+                <h3>SAV</h3>
+                <p>Sistema que administra el transito de animales y sus distintos productos en una veterinaria</p>
+              </div>
+            </article>
+          </a>
+
+          <a href="https://github.com/Daniel220503/Foodies-TSJ" target="_blank" rel="noopener noreferrer" class="card-link">
+            <article class="card">
+              <img class="thumb" src="assets/TSJ foodies.png" alt="TSJ Foodies">
+              <div class="card-body">
+                <h3>TSJ FOODIES</h3>
+                <p>Plataforma de comida en planteles universitarios</p>
+              </div>
+            </article>
+          </a>
+        </div>
+
         <p id="contador-proyectos" class="project-counter">
-          Total de proyectos: <span>2</span>
+          Total de proyectos: <span>3</span>
         </p>
       </div>
     </section>
 
     <section id="contacto" class="section">
-  <div class="container">
-    <h2>Contacto</h2>
+      <div class="container">
+        <h2>Contacto</h2>
 
-    <p>
-      Envíame un correo en el siguiente apartado o directamente a
-      <a href="mailto:rubenmercado077@gmail.com">rubenmercado077@gmail.com</a>
-    </p>
+        <p>
+          Envíame un correo en el siguiente apartado o directamente a
+          <a href="mailto:rubenmercado077@gmail.com">rubenmercado077@gmail.com</a>
+        </p>
 
-    <form id="contactForm" class="contacto">
+        <form id="contactForm" class="contacto">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" placeholder="Tu nombre" required>
 
-  <label for="name">Nombre</label>
-  <input type="text" id="name" name="name" required>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
 
-  <label for="email">Email</label>
-  <input type="email" id="email" name="email" required>
+          <label for="title">Titulo</label>
+          <input type="text" id="title" name="title" placeholder="Motivo del mensaje" required>
 
-  <label for="title">Titulo</label>
-  <input type="text" id="title" name="title" required>
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" placeholder="Escribe tu mensaje..." required></textarea>
 
-  <label for="message">Mensaje</label>
-  <textarea id="message" name="message" required></textarea>
+          <button type="submit">Enviar mensaje</button>
+        </form>
 
-  <button type="submit">Enviar</button>
-
-</form>
-
-    <ul class="social-list">
-      <li><a href="https://github.com/TamlitoVerdeMain" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-      <li><a href="https://www.linkedin.com/in/ruben-mercado2004/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-    </ul>
-  </div>
-</section>
+        <ul class="social-list">
+          <li><a href="https://github.com/TamlitoVerdeMain" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/ruben-mercado2004/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        </ul>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
@@ -165,9 +170,7 @@
     </div>
   </footer>
 
- <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script src="js/script.js"></script>
-<script src="js/main.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
